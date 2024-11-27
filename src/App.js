@@ -3,7 +3,9 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { fetchJokes } from './services/api-service';
 import { makepromt } from './services/utils';
-
+import Divider from '@mui/material/Divider';
+import ResponsiveAppBar from './Components/ResponsiveAppBar';
+import HomePageGrid from './Components/HomePageGrid';
 function App() {
   const [data, setData] = useState();
 
@@ -23,7 +25,9 @@ function App() {
 
   return (
     <div className="App">
-      {data}
+      <ResponsiveAppBar />
+      <Divider style={{ marginBottom: "3rem" }}></Divider>
+      <HomePageGrid></HomePageGrid>
     </div>
   );
 }
