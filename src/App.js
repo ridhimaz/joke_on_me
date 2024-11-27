@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+import Divider from '@mui/material/Divider';
+import ResponsiveAppBar from './Components/ResponsiveAppBar';
+import HomePageGrid from './Components/HomePageGrid';
 function App() {
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ResponsiveAppBar />
+      <Divider style={{marginBottom:"3rem"}}></Divider>
+    <HomePageGrid></HomePageGrid>
+
+
     </div>
   );
 }
