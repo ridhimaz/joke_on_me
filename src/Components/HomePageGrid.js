@@ -6,13 +6,16 @@ import men_laugh_2 from "../assets/men_laugh_2.jpg";
 import "./HomePageGridCss.css";
 import fire from "../assets/local_fire_department.svg";
 
+import { Link } from 'react-router-dom';
 function HomePageGrid() {
   return (
     <Grid2 container spacing={10} className='homePageGridContainer'>
 
       <Grid2 className="homePageGrid" size={{ xs: 12, md: 6, lg: 6 }}>
         <Box>
-          <p id="homePageGridSwipeHeading">Laugh! Laugh! Laugh!</p>
+          <Link to="/jokes">
+            <p id="homePageGridSwipeHeading">Laugh! Laugh! Laugh!</p>
+          </Link>
           <div className='homePageGridFire'>
             <img src={fire} id="homePageFire"></img>
             <p className="HomePageGridSwipePara">Error 404: Ego Not Found, </p>
