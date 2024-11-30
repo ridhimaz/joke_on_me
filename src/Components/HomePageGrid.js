@@ -8,7 +8,7 @@ import fire from "../assets/local_fire_department.svg";
 
 function HomePageGrid() {
   return (
-    <Grid2 container spacing={5} className='homePageGridContainer'>
+    <Grid2 container spacing={10} className='homePageGridContainer'>
 
       <Grid2 className="homePageGrid" size={{ xs: 12, md: 6, lg: 6 }}>
         <Box>

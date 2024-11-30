@@ -1,122 +1,127 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .poppins-thin-italic {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: italic;
-  }
-  
-
-.homePageGridContainer
-{
-   justify-content: space-between;
-   color: #fff;
-  
 }
-.homePageGrid
-{
-    padding:50px 100px;
-        font-family: "Roboto", sans-serif;
+
+.homePageGridContainer {
+    justify-content: center;
+    color: #fff;
+    padding: 5vw 8vw;
+}
+
+.homePageGrid {
+    padding: 0;
+    font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.homePageGridContainer .homePageGrid:nth-child(2)
-{
+.homePageGridContainer .homePageGrid:nth-child(2) {
     display: flex;
     flex-direction: column;
-    gap:20px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .homePageGridBox {
-  border-radius: 10px; 
-  margin-bottom:10px;
-  padding:10px;
-  justify-content: center;
-  position:relative;
-  width: 200px;
-  height:100px;
-  font-size: 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    font-size: 12px;
 }
-.odd1{
- border-left: 0.5px solid #fff;
- border-top: 0.5px solid #fff;
- background: linear-gradient(rgb(255, 105, 180), violet); /* Gradient background */
- box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05); 
+
+.odd1 {
+    border-left: 0.5px solid #fff;
+    border-top: 0.5px solid #fff;
+    background: linear-gradient(rgb(255, 105, 180), violet);
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05);
 }
-.even{
-transform: translate(300px,-50px);
-border-right: 0.5px solid #fff;
-border-bottom: 0.5px solid #fff;
-background: linear-gradient(limegreen, green); /* Gradient background */
-box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05); 
+
+.even {
+    transform: translate(300px, -50px);
+    border-right: 0.5px solid #fff;
+    border-bottom: 0.5px solid #fff;
+    background: linear-gradient(limegreen, green);
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05);
 }
-.odd2{
-  transform: translateY(-100px);
-  border-left: 0.5px solid #fff;
-  border-top: 0.5px solid #fff;
-  background: linear-gradient(violet, indigo);
-  box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05); 
+
+.odd2 {
+    transform: translateY(-100px);
+    border-left: 0.5px solid #fff;
+    border-top: 0.5px solid #fff;
+    background: linear-gradient(violet, indigo);
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05);
 }
-.homePageGridBoxImg
-{
-  width:50px;
-  position: absolute;
-  top:-25px;
-  left:-25px;
-  border:2px solid #fff;
-  border-radius: 100%;
+
+.homePageGridBoxImg {
+    width: 50px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    border: 2px solid #fff;
+    border-radius: 100%;
 }
-.homePageGridBoxPara
-{
-   position: relative;
-   padding:5px;
-   font-family: "Poppins", sans-serif;
-   font-weight: 300;
-   font-style: italic;
+
+.homePageGridBoxPara {
+    position: relative;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
 }
-.homePageGridFire
-{
+
+.homePageGridFire {
     display: flex;
-    gap:10px;
+    gap: 10px;
     justify-content: left;
     align-items: center;
     margin-top: 50px;
 }
-.homePageGridBtnDiv
-{
+
+.homePageGridBtnDiv {
     display: flex;
     flex-direction: column;
-    gap:15px;
+    gap: 15px;
     margin-top: 50px;
 }
-#homePageFire{
-    height:100px;
-    width:100px;
+
+#homePageFire {
+    height: 100px;
+    width: 100px;
     filter: brightness(0) saturate(100%) invert(45%) sepia(89%) saturate(1000%) hue-rotate(10deg) brightness(100%);
 }
-#homePageGridSwipeHeading
-{
+
+#homePageGridSwipeHeading {
     font-size: 3rem;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: italic;
 }
-.HomePageGridSwipePara
-{
-    margin: 2rem 0 ;
+
+.HomePageGridSwipePara {
+    margin: 2rem 0;
     font-size: 1rem;
 }
 
 
-@media only screen and (max-width: 900px) {
-       .homePageGridBox{
-        width:100%;
-       }
-       .even{
-       transform: translate(0,0);
-       }
-       .odd2{
-        transform: translate(0,0);
-       }
+@media only screen and (max-width: 1300px) {
+    .homePageGridBox {
+        width: 100%;
+    }
 
-  }
+    .even {
+        transform: translate(0, 0);
+    }
+
+    .odd2 {
+        transform: translate(0, 0);
+    }
+
+}
