@@ -2,12 +2,15 @@ import React from 'react';
 import { Grid, Box } from '@mui/material';
 import SwipeRightIcon from '@mui/icons-material/SwipeRight';
 import crazyGuy from "../assets/crazy-man-with-mobile-phone-funny-expression_1194-3282.avif"
+import { Link } from 'react-router-dom';
 function HomePageGrid() {
   return (
     <Grid container spacing={2} className='HomePageGridContainer'>
       <Grid className="HomePageGrid" size={{ xs: 12, md: 5 }}>
         <Box>
-          <p id="HomePageGridSwipeHeading">Click to laugh</p>
+          <Link to="/jokes">
+            <p id="HomePageGridSwipeHeading">Click to laugh</p>
+          </Link>
           <SwipeRightIcon></SwipeRightIcon>
           <p id="HomePageGridSwipePara">lorem-ipsum gfwdygkfncdnnvcjgefg jsfdcyewfgficehrcmbdhctfydchhbjd</p>
         </Box>
