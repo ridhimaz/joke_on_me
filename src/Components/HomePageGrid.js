@@ -1,32 +1,54 @@
 import React from 'react';
-import { Grid, Box } from '@mui/material';
-import SwipeRightIcon from '@mui/icons-material/SwipeRight';
-import crazyGuy from "../assets/crazy-man-with-mobile-phone-funny-expression_1194-3282.avif"
+import { Grid2, Box, Button } from '@mui/material';
+import men_laugh from "../assets/men_laugh.jpg";
+import woman_laugh from '../assets/woman_laugh.avif';
+import men_laugh_2 from "../assets/men_laugh_2.jpg";
+import "./HomePageGridCss.css";
+import fire from "../assets/local_fire_department.svg";
+
+import { Link } from 'react-router-dom';
 function HomePageGrid() {
   return (
-    <Grid container spacing={2} className='HomePageGridContainer'>
-      <Grid className="HomePageGrid" size={{ xs: 12, md: 5 }}>
+    <Grid2 container spacing={10} className='homePageGridContainer'>
+
+      <Grid2 className="homePageGrid" size={{ xs: 12, md: 6, lg: 6 }}>
         <Box>
-          <p id="HomePageGridSwipeHeading">Click to laugh</p>
-          <SwipeRightIcon></SwipeRightIcon>
-          <p id="HomePageGridSwipePara">lorem-ipsum gfwdygkfncdnnvcjgefg jsfdcyewfgficehrcmbdhctfydchhbjd</p>
+          <Link to="/jokes">
+            <p id="homePageGridSwipeHeading">Laugh! Laugh! Laugh!</p>
+          </Link>
+          <div className='homePageGridFire'>
+            <img src={fire} id="homePageFire"></img>
+            <p className="HomePageGridSwipePara">Error 404: Ego Not Found, </p>
+          </div>
+          <div className='homePageGridBtnDiv'>
+            <p className="">To get ROFL - Rolling On Floor Laughing, </p>
+            <Button className="homePageGridBtn"variant="outlined">Click me!</Button>
+          </div>
+
         </Box>
-      </Grid>
-      <Grid className="HomePageGrid" size={{ xs: 12, md: 7 }}>
-        <Box className='HomePageGridBox odd1' size={12} >
-          <p>Swipe for laugh</p>
-        </Box>
-        <Box  className='HomePageGridBox even' size={12}>
-          <p>Swipe for laugh</p>
-        
-        </Box>
-        <Box  className='HomePageGridBox odd2' size={12}>
-          <p>Swipe for laugh</p>
-        
-        </Box>
-   
-      </Grid>
-    </Grid>
+      </Grid2>
+      <Grid2 className="homePageGrid" size={{ xs: 12, md: 6, lg: 6 }}>
+        <div className='homePageGridBox odd1' size={12} >
+          <img className="homePageGridBoxImg" src={men_laugh}></img>
+          <p className='homePageGridBoxPara'>Software Engineer</p>
+          <p className='homePageGridBoxPara'>"Why did the software engineer take a break?
+            Because they couldn't "function" without coffee!" </p>
+        </div>
+        <div className='homePageGridBox even' size={12} >
+          <img className="homePageGridBoxImg" src={woman_laugh}></img>
+          <p className='homePageGridBoxPara'>Software Engineer</p>
+          <p className='homePageGridBoxPara'>"Why did Ridhima prefer coding over socializing?
+            Because the only 'bugs'" </p>
+        </div>
+        <div className='homePageGridBox odd2' size={12} >
+          <img className="homePageGridBoxImg" src={men_laugh_2}></img>
+          <p className='homePageGridBoxPara'>Software Engineer</p>
+          <p className='homePageGridBoxPara'>"Why did Ridhima prefer coding over socializing?
+            Because the only 'bugs'" </p>
+        </div>
+      </Grid2>
+
+    </Grid2>
   );
 }
 

@@ -6,10 +6,11 @@ const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
 export const fetchJokes = async (prompt) => {
     try {
         const result = await model.generateContent(prompt);
-        const response = result.response.candidates[0].content.parts[0]
-        console.log(response.text, "qwert");        
-        return response.text;
+        const response = result.response.candidates[0].content.parts[0];
+        if (response.text) return response.text;
+        return "Something went wrong!"
     } catch (error) {
-        console.error('Error:', error);
+        console.log("Error:", error);
+        return "Something went wrong!"
     }
 };
