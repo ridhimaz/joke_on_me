@@ -9,27 +9,26 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
+import "../Components/ResponsiveAppBarCss.css";
+import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 
 const pages = ['Home', 'Contact'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
   return (
     <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <InsertEmoticonIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+
+          {/* <img src={logo} className='logo' style={{display:"none"}}></img> */}
           <Typography
             variant="h6"
             noWrap
@@ -47,7 +46,6 @@ function ResponsiveAppBar() {
           >
             JokesOnYou
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -82,7 +80,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <InsertEmoticonIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -99,7 +97,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            JokesOnYou
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -112,7 +110,6 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-      
         </Toolbar>
       </Container>
     </AppBar>
