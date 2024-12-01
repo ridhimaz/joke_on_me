@@ -71,7 +71,7 @@ const Jokes = () => {
 
     const handleKeyDown = (event) => {
         if (event.key === "Enter") {
-            return;
+            event.preventDefault();
         }
     };
 
@@ -163,7 +163,7 @@ const Jokes = () => {
                             :
                             <>
                                 <div className="joke-heading">Jokes on you (take them well) : </div>
-                                <div dangerouslySetInnerHTML={{ __html: jokes }} />
+                                <div className='joke-content' dangerouslySetInnerHTML={{ __html: jokes }} />
                             </>
                 }
             </div>
