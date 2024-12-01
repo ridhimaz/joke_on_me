@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import "../Components/ResponsiveAppBarCss.css";
 import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
+import applogo from '../assets/app-logo.svg';
 
 const pages = ['Home', 'Contact'];
 
@@ -26,10 +27,9 @@ function ResponsiveAppBar() {
     <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <InsertEmoticonIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-
-          {/* <img src={logo} className='logo' style={{display:"none"}}></img> */}
-          <Typography
+          {/* <InsertEmoticonIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
+          <img src={applogo} alt="" className='logo'></img>
+          {/* <Typography
             variant="h6"
             noWrap
             component="a"
@@ -45,7 +45,7 @@ function ResponsiveAppBar() {
             }}
           >
             JokesOnYou
-          </Typography>
+          </Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
