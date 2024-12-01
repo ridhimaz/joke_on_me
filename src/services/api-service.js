@@ -8,9 +8,9 @@ export const fetchJokes = async (prompt) => {
         const result = await model.generateContent(prompt);
         const response = result.response.candidates[0].content.parts[0];
         if (response.text) return response.text;
-        return "Something went wrong!"
+        return "Something went wrong! Please try again."
     } catch (error) {
         console.log("Error:", error);
-        return "Something went wrong!"
+        return "Something went wrong! Please try again."
     }
 };
