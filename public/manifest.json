@@ -3,17 +3,17 @@
   "name": "Make jokes on you",
   "icons": [
     {
-      "src": "app-logo.png",
+      "src": "app-logo.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "app-logo.png",
+      "src": "app-logo.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "app-logo.png",
+      "src": "app-logo.jpg",
       "type": "image/png",
       "sizes": "512x512"
     }
