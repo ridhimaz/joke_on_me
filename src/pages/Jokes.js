@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './jokes.css';
 import { AnimatePresence, motion } from 'framer-motion';
 import { makepromt } from '../services/utils';
@@ -86,7 +86,7 @@ const Jokes = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const prompt = makepromt(formData.name, formData.job, formData.personality, formData.sleep);
+        const prompt = makepromt(formData.name, formData.job, formData.hobbies, formData.personality, formData.lovelife, formData.sleep);
         setIsLoading(true);
         const res = await fetchJokes(prompt);
         setJokes(res);
@@ -181,7 +181,7 @@ const Jokes = () => {
                   </div>
                     : 
                 <div className="typeform-wrapper">
-                    {jokes}
+                    <div dangerouslySetInnerHTML={{ __html: jokes }} />
                 </div>
             }
       </div>
