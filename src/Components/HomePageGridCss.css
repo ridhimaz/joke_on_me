@@ -32,9 +32,10 @@
     padding: 10px;
     justify-content: center;
     position: relative;
-    width: 200px;
+    width: 250px;
     height: 100px;
     font-size: 12px;
+    opacity: 0.8;
 }
 
 .odd1 {
@@ -61,7 +62,8 @@
 }
 
 .homePageGridBoxImg {
-    width: 50px;
+    width: 40px;
+    height: 40px;
     position: absolute;
     top: -25px;
     left: -25px;

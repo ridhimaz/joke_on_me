@@ -11,8 +11,9 @@
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-  width: 100%;
+  /* width: 100%; */
   width: 600px;
+  min-height: 200px;
   padding: 20px;
 }
 
@@ -110,4 +111,24 @@
   background-color: #007bff;
   color: white;
   border-color: #007bff;
+}
+
+.btn-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* loading spinner CSS*/
+.ring{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.joke-heading{
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 30px;
 }

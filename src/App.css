@@ -13,3 +13,6 @@ body {
 {
   height:50px;
 }
+.App{
+  min-height: 100vh;
+}
