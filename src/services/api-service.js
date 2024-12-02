@@ -7,7 +7,11 @@ export const fetchJokes = async (prompt) => {
     try {
         const result = await model.generateContent(prompt);
         const response = result.response.candidates[0].content.parts[0];
-        if (response.text) return response.text;
+        if (response.text) 
+            {
+                console.log(genAI);
+                return response.text;
+            }
         return "Something went wrong! Please try again."
     } catch (error) {
         console.log("Error:", error);
