@@ -12,10 +12,14 @@ function HomePageGrid() {
     <Grid2 container spacing={10} className='homePageGridContainer'>
       <Grid2 className="homePageGrid" size={{ xs: 12, md: 6, lg: 6 }}>
         <Box>
-          <p id="homePageGridSwipeHeading">Click to laugh</p>
+          <p id="homePageGridSwipeHeading">
+            <Link to="/jokes">
+              Roast alert!
+            </Link>
+          </p>
           <div className='homePageGridFire'>
             <img alt="" src={fire} id="homePageFire"></img>
-            <p className="HomePageGridSwipePara">Error 404: Ego Not Found, </p>
+            <p className="HomePageGridSwipePara">Error 404: Ego Not Found </p>
           </div>
           <div className='homePageGridBtnDiv'>
             <p className="">To get ROFL - Rolling On Floor Laughing, </p>
@@ -28,6 +32,8 @@ function HomePageGrid() {
                   '&:hover': {
                     backgroundColor: 'transparent',
                   },
+                  fontSize: '18px',
+                  height: '50px'
                 }}
                 variant="outlined"
               >

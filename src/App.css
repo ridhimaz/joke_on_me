@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 *{
   margin:0;
   padding:0;
+  font-family: 'Comic Neue';
 }
 a{
   text-decoration: none;
+  color: #fff;
 }
 body {
   background: linear-gradient(to top right,  rgb(100, 176, 234), rgb(0, 132, 255) , rgb(150, 81, 230) );

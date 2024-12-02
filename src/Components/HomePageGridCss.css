@@ -9,7 +9,7 @@
 
 .homePageGrid {
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     font-weight: 300;
     font-style: normal;
 }
@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .homePageGridBox {
@@ -28,25 +28,27 @@
     justify-content: center;
     position: relative;
     width: 250px;
-    height: 100px;
-    font-size: 12px;
+    /* height: 100px; */
+    font-size: 14px;
     opacity: 0.8;
+    /* padding: 20px; */
 }
 
 .odd1 {
-    background: linear-gradient(rgb(255, 105, 180), violet);
+    background: linear-gradient(rgb(221, 47, 134), #aa0caa);
     box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05);
 }
 
 .even {
-    transform: translate(300px, -50px);
+    transform: translate(310px, -50px);
     background: linear-gradient(limegreen, green);
     box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05);
 }
 
 .odd2 {
     transform: translateY(-100px);
-    background: linear-gradient(violet, indigo);
+    background: linear-gradient(rgb(48, 12, 74), indigo);
+    /* background: rgb(64, 9, 104); */
     box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -63,7 +65,7 @@
 .homePageGridBoxPara {
     position: relative;
     padding: 5px;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 300;
     font-style: italic;
 }
@@ -73,14 +75,14 @@
     gap: 10px;
     justify-content: left;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .homePageGridBtnDiv {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #homePageFire {
