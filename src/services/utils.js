@@ -10,7 +10,8 @@ export const makepromt = (userName, userJob, userHobbies, userPersonality, userL
     Love-life: ${userLoveLife}. 
     Bed-between: ${userSleepTime}.
     Give the best 3 jokes on me.
-    Give the response with formatting and indentation.`
+    Give the response with formatting and indentation.
+    Don't include any other information, just the jokes.`
 }
 
 export const questions = [
